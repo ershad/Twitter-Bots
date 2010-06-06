@@ -47,9 +47,3 @@ while (True):
 			output = '@' + s.user.screen_name + ' ' + defi
 			print output
 			api.PostUpdate (output.decode("utf-8",'ignore'))
-#TODO
-
-	
-
-
-
