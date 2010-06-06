@@ -26,7 +26,9 @@ while (True):
 	time.sleep(sleep_time)
 	timeline = api.GetReplies()
 	for s in timeline:
-		#print "%s --> %s" % (s.user.name, s.text)
+		#print "%s --> %s" % (s.user.name, s.text)To git@github.com:ershad/Twitter-Bots.git
+   33f70ea..18abf56  master -> master
+
 		tweet = s.user.name + "\t" + s.text
 		y = tweet.find("dict")
 	
@@ -45,6 +47,7 @@ while (True):
 			output = '@' + s.user.screen_name + ' ' + defi
 			print output
 			api.PostUpdate (output.decode("utf-8",'ignore'))
+#TODO
 
 	
 
