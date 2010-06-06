@@ -26,7 +26,7 @@ while (True):
 	time.sleep(sleep_time)
 	timeline = api.GetReplies()
 	for s in timeline:
-		#print "%s --> %s" % (s.user.name, s.text) #This line prints all the replies
+		#print "%s --> %s" % (s.user.name, s.text)
 		tweet = s.user.name + "\t" + s.text
 		y = tweet.find("dict")
 	
