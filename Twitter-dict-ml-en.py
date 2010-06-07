@@ -30,8 +30,14 @@ while (True):
 
 		tweet = s.user.name + "\t" + s.text
 		y = tweet.find("dict")
-	
+
 		if y > 0:
+			fin = open(dataFile, 'r')
+			x = fin.read()
+			y = x.find(s.id.encode("utf-8",'ignore'))
+			fin.close()
+	
+		if y < 0:
 			print "%s --> %s" % (s.user.name, s.text)
 			word = s.text[13:]
 			print word			
